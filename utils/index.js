@@ -1,13 +1,19 @@
-export const suma = (a, b ) => a + b;
+const suma = (a, b ) => a + b;
 
-export const resta = (a, b ) => a - b;
+const resta = (a, b ) => a - b;
 
-export const promedio = (a, b ) => (a + b ) / 2;
+const promedio = (a, b ) => (a + b ) / 2;
 
-export const palindromo = (str) => {
+const palindromo = (str) => {
     const strReverse = str.split("").reverse().join("");
     return str = strReverse;
 }
 
+module.exports = {
+    suma,
+    resta,
+    promedio,
+    palindromo,
+}
 
 
